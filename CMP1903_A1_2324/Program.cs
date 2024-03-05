@@ -20,10 +20,10 @@ namespace CMP1903_A1_2324
             testing.TestDieBounds();
 
             Game game = new Game();
-            int dieRoll3 = game.Roll(3);
-            Console.WriteLine($"Rolling 3 dice, the sum is {dieRoll3}");
-            int dieRoll4 = game.Roll(4);
-            Console.WriteLine($"Rolling 4 dice, the sum is {dieRoll4}");
+            int dieRoll = game.Roll(3);
+            Console.WriteLine($"Rolling 3 dice, the sum is {dieRoll}");
+            dieRoll = game.Roll(3);
+            Console.WriteLine($"Rolling 3 dice, the sum is {dieRoll}");
             Console.WriteLine($"The average die roll is {game.Average}.");
             Console.ReadLine();
         }

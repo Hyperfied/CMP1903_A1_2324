@@ -24,7 +24,7 @@ namespace CMP1903_A1_2324
             Die debugDie = new Die();
             Random rand = new Random();
             
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 1000; i++) // Roll a thousand dice and see if they are in bounds.
             {
                 int roll = debugDie.Roll(rand);
                 Debug.Assert(roll > 0 && roll < 7, "Roll is out of bounds.");
@@ -38,7 +38,7 @@ namespace CMP1903_A1_2324
         public void TestGameRoll()
         {
             Game game = new Game();
-            for (int i = 0;i < 1000;i++)
+            for (int i = 0;i < 1000;i++) // Roll 3 dice and see if it is in the minimum and maximum range, 1000 times.
             {
                 int sum = game.Roll(3);
                 Debug.Assert(sum >= 3 && sum <= 18, "Sum is out of range.");
@@ -53,7 +53,7 @@ namespace CMP1903_A1_2324
         { 
             Game game = new Game();
 
-            for(int i = 0; i<1000; i++)
+            for(int i = 0; i<1000; i++) // Roll 3 dice and check if the average is between 1 and 6, 1000 times.
             {
                 game.Roll(3);
                 float average = game.Average;

@@ -8,15 +8,11 @@ namespace CMP1903_A1_2324
 {
     internal class Game
     {
-        Die die;
+        Die die = new Die();
         Random random = new Random();
         int overallSum = 0;
         int numberOfRolls = 0;
 
-        public Game()
-        {
-            this.die = new Die();
-        }
 
         /// <summary>
         /// Rolls a number of dice and gets the sum.
